@@ -18,7 +18,7 @@ public class StepDefinitions {
     private String result;
 
     @Given("^I have two numbers: (.*) and (.*)$")
-    public void i_have_two_numbers(String a, String b) throws Throwable {
+    public void there_are_two_numbers(String a, String b) throws Throwable {
         this.a = a;
         this.b = b;
     }
