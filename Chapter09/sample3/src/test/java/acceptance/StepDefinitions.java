@@ -37,13 +37,13 @@ public class StepDefinitions {
 
 
     @Given("^I have two numbers: (.*) and (.*)$")
-    public void i_have_two_numbers(String a, String b) throws Throwable {
+    public void i_have_2_numbers(String a, String b) throws Throwable {
         this.a = a;
         this.b = b;
     }
 
     @When("^the calculator sums them$")
-    public void the_calculator_sums_them() throws Throwable {
+    public void the_calculator_sum_them() throws Throwable {
         String url = String.format("%s/div?a=%s&b=%s", server, a, b);
         result = restTemplate.getForObject(url, String.class);
     }
